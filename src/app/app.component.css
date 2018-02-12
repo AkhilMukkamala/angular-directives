@@ -12,3 +12,7 @@ h1 {
 .server-button{
     margin-bottom: 20px;
 }
+
+.change-background-color {
+    background-color: tomato;
+}

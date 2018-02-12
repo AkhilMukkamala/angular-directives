@@ -12,7 +12,7 @@
     </div>
     <div class="col-6 main-block">
 
-      <p [ngStyle]="{color: getColor()}"> Server is {{ serverStatus }}</p>
+      <p [ngStyle]="{color: getColor()}" [ngClass]="{'change-background-color': serverStatus === 'Online'  }"> Server is {{ serverStatus }}</p>
     </div>
 
   </div>
