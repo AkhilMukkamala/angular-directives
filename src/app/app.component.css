@@ -4,3 +4,11 @@ div > h1 {
 h1 {
     font-size: 24px;
 }
+
+.main-block{
+    margin-top: 50px;
+}
+
+.server-button{
+    margin-bottom: 20px;
+}

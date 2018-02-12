@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular Directives';
+
+  serverCreated: Boolean = false;
+  serverName: String = '';
+
+
+  
+  onCreateServer() {
+    this.serverCreated = true;
+  }
+
+
+
 }
