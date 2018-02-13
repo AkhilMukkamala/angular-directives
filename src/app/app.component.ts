@@ -9,15 +9,16 @@ export class AppComponent {
   title = 'Angular Directives';
 
   serverCreated: Boolean = false;
-  serverName: String = '';
+  serverName = '';
   serverStatus: String = 'Offline';
-
+  servers = ['TestServer1', 'TestServer2'];
 
   constructor() {
     this.serverStatus = Math.random() > 0.5 ? 'Offline' : 'Online';
   }
   onCreateServer() {
     this.serverCreated = true;
+    this.servers.push(this.serverName);
   }
 
   getColor() {
