@@ -12,7 +12,7 @@
     </div>
     <div class="col-6 main-block">
       <p [ngStyle]="{color: getColor()}" [ngClass]="{'change-background-color': serverStatus === 'Online'  }"> Server is {{ serverStatus }}</p>
-      <p *ngFor="let server of servers">{{ server }}</p>
+      <p *ngFor="let server of servers; let i = index">{{ server }} {{i}} </p>
     </div>
 
   </div>
