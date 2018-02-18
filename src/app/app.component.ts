@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { AppModel } from './app.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -24,6 +24,14 @@ export class AppComponent {
   getColor() {
     return this.serverStatus === 'Online' ? 'Green' : 'Red';
   }
+
+// Models
+
+  apps: AppModel[] = [
+    new AppModel('First App', 'This App is Life', 'https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/html5-css3-admin-templates.jpg'),
+    new AppModel('Second App', 'This App is !Life', 'https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/html5-css3-admin-templates.jpg')
+  ];
+
 
 
 }

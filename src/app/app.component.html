@@ -1,8 +1,13 @@
-<div class="container">
-  <h1 class="lead text-success" style="text-align: center">
-    Welcome to {{ title }}
-  </h1>
+<div class="row">
+  <div class="container">
+    <h1 class="lead text-success" style="text-align: center">
+      Welcome to {{ title }}
+    </h1>
+  </div>
+</div>
+
   <div class="row">
+    <div class="container">
     <div class="col-6 main-block">
       <input type="text" class="form-control" [(ngModel)]="serverName">
       <br />
@@ -12,8 +17,23 @@
     </div>
     <div class="col-6 main-block">
       <p [ngStyle]="{color: getColor()}" [ngClass]="{'change-background-color': serverStatus === 'Online'  }"> Server is {{ serverStatus }}</p>
-      <p *ngFor="let server of servers; let i = index">{{ server }} {{i}} </p>
+      <p *ngFor="let server of servers; let i = index"> {{ server }} </p>
     </div>
+  </div>
+  </div>
 
+
+
+<div class="row">
+  <div class="container">
+    <div class="col-12">
+      <a href="" *ngFor="let app of apps">
+      <h1> {{ app.appName }}</h1>
+      <span> {{ app.description }} </span>
+      <img [src]="app.imagePath" alt="{{ app.appName}}">
+    </a>
+    </div>
   </div>
 </div>
+
+
