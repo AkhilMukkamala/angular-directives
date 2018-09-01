@@ -1,3 +1,6 @@
+# Deprecated No Longer Maintained.
+
+
 # AngularDirectives
 
 This Project was created to give a Deep Dive into Angular Directives.
